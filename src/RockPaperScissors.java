@@ -159,13 +159,6 @@ public class RockPaperScissors {
 
     private void generateResults(int personSelect) throws IOException {
         this.person = personSelect;
-        // images
-        BufferedImage img = ImageIO.read(new File("rock.jpg"));
-        Image imgNew = img.getScaledInstance(120, 120, Image.SCALE_SMOOTH);
-        BufferedImage img2 = ImageIO.read(new File("paper.jpg"));
-        Image imgNew2 = img2.getScaledInstance(120, 120, Image.SCALE_SMOOTH);
-        BufferedImage img3 = ImageIO.read(new File("scissors.jpg"));
-        Image imgNew3 = img3.getScaledInstance(120, 120, Image.SCALE_SMOOTH);
         // who wins?
         this.northEast.setText(whoWins() + " wins!");
     }
